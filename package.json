@@ -1,0 +1,19 @@
+{
+  "name": "cool-bicycle-app",
+  "private": false,
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.1",
+    "puppeteer": "^8.0.0"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "scripts": {
+    "dev": "lerna run dev --stream --parallel",
+    "lint": "prettier --write \"**/*.{js,ts,json,md}\"",
+    "test:e2e": "cd ./packages/web; yarn run e2e-puppeteer"
+  },
+  "license": "MIT",
+  "version": "0.0.0"
+}

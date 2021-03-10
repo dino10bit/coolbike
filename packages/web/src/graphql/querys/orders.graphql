@@ -1,0 +1,27 @@
+query Orders {
+  orders {
+    id
+    invoiceNumber
+    order {
+      id
+      product {
+        id
+        name
+      }
+      quantity
+    }
+    client {
+      id
+      name
+      lastName
+      email
+      phone
+    }
+    salesman {
+      id
+      name
+    }
+    total
+    state
+  }
+}

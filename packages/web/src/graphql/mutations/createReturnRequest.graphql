@@ -1,0 +1,9 @@
+mutation CreateReturnRequest($input: ReturnRequestInput!) {
+    createReturnRequest(input: $input) {
+        serialNumber
+        invoiceNumber
+        returnReason
+        returnReasonComment
+        comment
+    }
+}

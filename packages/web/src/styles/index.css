@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-field {
+  @apply shadow;
+  @apply appearance-none;
+  @apply border;
+  @apply rounded;
+  @apply w-full;
+  @apply py-2;
+  @apply px-3;
+  @apply text-gray-700;
+  @apply leading-tight;
+}
+
+.form-field:focus {
+  @apply outline-none;
+  @apply shadow-outline;
+}
+
+.form-submit-button {
+  @apply bg-gray-900;
+  @apply w-full;
+  @apply mt-5;
+  @apply p-2;
+  @apply text-white;
+  @apply uppercase;
+  @apply rounded;
+  @apply font-bold;
+}
+
+.form-button {
+  @apply bg-white;
+  @apply w-full;
+  @apply mt-5;
+  @apply p-2;
+  @apply text-gray-800;
+  @apply uppercase;
+  @apply rounded;
+  @apply font-bold;
+  @apply border-2;
+}
+
+.form-submit-button:hover {
+  @apply bg-indigo-800;
+}
+
+.form-button:hover {
+  @apply bg-gray-300;
+}

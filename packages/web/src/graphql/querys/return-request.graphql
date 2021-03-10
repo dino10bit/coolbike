@@ -1,0 +1,10 @@
+query ReturnRequest($id: ID!) {
+  returnRequest(id: $id) {
+    id
+    serialNumber
+    invoiceNumber
+    returnReason
+    returnReasonComment
+    comment
+  }
+}

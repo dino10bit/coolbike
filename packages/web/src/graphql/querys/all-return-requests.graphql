@@ -1,0 +1,11 @@
+query AllReturnRequests {
+    allReturnRequests {
+        id
+        serialNumber
+        invoiceNumber
+        returnReason
+        returnReasonComment
+        comment
+        createdAt
+    }
+}
